@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+</head>
+
+<body>
+    <h1>SVG Loader made using gsap TweenMax</h1>
+    <svg version="1.1" width="500" height="500" viewBox="0 0 500 500">
+      <defs>
+      <filter id="goo" height="300%" y="-100%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values= "1 0 0 0 0
+                                                        0 1 0 0 0
+                                                        0 0 1 0 0
+                                                        0 0 0 20 -3"/>
+
+      </filter>
+
+  </defs>
+      <g class="circle" filter="url(#goo)">
+      <circle fill="#fff" class="social-1"  id="XMLID_18_" cx="250" cy="250" r="15"/>
+      <circle fill="#fff" class="social-2" id="XMLID_18_" cx="250" cy="250" r="15"/>
+      <circle fill="#fff" class="social-3"  id="XMLID_18_" cx="250" cy="250" r="15"/>
+      <circle fill="#fff" class="social-5"  id="XMLID_18_" cx="250" cy="250" r="15"/>
+      <circle fill="#fff" class="social-4"  id="XMLID_18_" cx="250" cy="250" r="30"/>
+      </g>
+</svg>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

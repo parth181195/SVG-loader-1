@@ -1,0 +1,16 @@
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+body {
+    background: #45AE4F;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
